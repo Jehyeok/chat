@@ -11,8 +11,9 @@ class SessionsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  #test "사용자 식별 토큰 저장" do
-  #  sessions_controller = SessionsController.new
-  #  sessions_controller.create
-  #end
+  test "사용자 식별 토큰 저장" do
+    #sessions_controller = SessionsController.new
+    #sessions_controller.create
+    #puts session[:token]
+  end
 end
