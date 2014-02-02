@@ -3,7 +3,10 @@ class SessionsController < ApplicationController
   end
 
   def create
-  	session[:username] = params[:username]
-  	render :text => "Welcome #{session[:username]}!"
+  	#session[:username] = params[:username]
+  	#render :text => "Welcome #{session[:username]}!"
+    token = Token.new
+    token.save
   end
+
 end
